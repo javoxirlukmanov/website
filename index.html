@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link   rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style/style-grid.css">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+
+        body {
+          background: #eee;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-size: 14px;
+          color: #000;
+          margin: 0;
+          padding: 0;
+        }
+
+        .swiper {
+          width: 100%;
+          height: 100%;
+        }
+
+        .swiper-slide {
+            height: 800px;
+          text-align: left;
+          font-size: 18px;
+          background: #fff;
+
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-justify-content: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .swiper-slide {
+          width: 80%;
+        }
+
+        .swiper-slide:nth-child(2n) {
+          width: 60%;
+        }
+
+        .swiper-slide:nth-child(3n) {
+          width: 40%;
+        }
+        .mycontainer{
+            width: 1000px;
+            margin: 100px auto;
+        }
+      </style>
+    <title>Grid</title>
+</head>
+
+<body>
+    <!-- header starting -->
+    <header class="header-top">
+        <nav>
+            <div class="container">
+                <div class="row justify-end">
+                    <div class="col-7">
+                        <ul class="nav-ul d-flex justify-between mt-2">
+                            <li class="na-li"><a class="nav-link" href="#!">Home</a></li>
+                            <li class="na-li"><a class="nav-link" href="#about">About</a></li>
+                            <li class="na-li"><a class="nav-link" href="#blogs">Blog</a></li>
+                            <li class="na-li"><a class="nav-link" href="#pages">Pages</a></li>
+                            <li class="na-li"><a class="nav-link" href="#!">Contact</a></li>
+                            <li class="na-li"><a class="nav-link" href="#!">Cart <span>(0)</span></a></li>
+                            <li class="na-li"><a class="nav-btn" href="#!">Get a quote</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- container starting -->
+
+        <div class="container">
+            <div class="row justify-center">
+                <div class="col-6">
+                    <h1 data-aos="fade-left" class="headerH1 mt-165">
+                        We provide effective contracting services
+                    </h1>
+                    <p data-aos="fade-up-left" class="header-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit varius rhoncus, nullam
+                        pulvinar ut sollicitudin dictumst porttitor porttitor quis quisque erat.
+                    </p>
+                    <div class="row mt-35 justify-center">
+                        <div class="col-4">
+                            <a href="#!" class="btn-primary">Get a quote</a>
+                        </div>
+                        <div class="col-4">
+                            <a href="#!" class="btn-light">Our services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- section starting -->
+    <section class="section-top" id="about">
+        <div class="container">
+            <div class="row mt-144 justify-around">
+                <div data-aos="fade-right" class="col-5">
+                    <div class="card-img">
+                        <img src="./assets/image/IMAGE.png" alt="png">
+                        <div class="square"></div>
+                    </div>
+                </div>
+
+                <div  data-aos="fade-left" class="col-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <h6 class="sectionH6">/about us</h6>
+                        </div>
+                        <div class="col-10">
+                            <h2 class="section-H2">A team of reliable and experienced contractors</h2>
+                        </div>
+                        <div class="col-12">
+                            <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit tristique
+                                imperdiet nisi metus,
+                                viverra nulla aliquet dui porta porttitor neque lectus diam justo lobortis purus in
+                                elit, elementum dignissim nullam vitae pellentesque aliquet aliquam sagittis pulvinar
+                                egestas morbi suspendisse eleifend.</p>
+                        </div>
+
+
+                    </div>
+                    <div class="row mt-57">
+                        <div class="col-4">
+                            <h3 class="section-count" hello="+" hello1="Executed Projects">350</h3>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="section-count" hello1="Experience">12
+                                <span>Y</span>
+                            </h3>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="section-count" hello="+" hello1="Satisfied Clients">350</h3>
+                        </div>
+                    </div>
+                    <a href="#!" class="btn-section">About our company</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- starting section services -->
+
+    <section class="section-services " id="services">
+
+            <div class="container">
+
+                    <h6 class="sectionH6 pt-10">/Our Services</h6>
+                    <div class="row justify-around mt-3">
+                        <div  data-aos="fade-right" class="col-4 ">
+                        <h1 class="sectionH1 ">A comprehensive set of services</h1>
+                        </div>
+                        <div data-aos="fade-left" class="col-7 mt-3">
+                            <div class="row justify-center">
+                                <div  class="col-4">
+                                    <a href="#!" class="btn-secondary">Get a quote</a>
+                                </div>
+                                <div class="col-4">
+                                    <a href="#!" class="btn-second-light">Our services</a>
+                                </div>
+                            </div>
+                        </div>
+            </div>
+
+<div class="row justify-around mt-5">
+<div data-aos="fade-right" class="col-3">
+    <div class="row">
+        <div class="col-12">
+            <img src="./assets/image/IMAGE (11).png" alt="">
+        </div>
+        <div  class="col-12">
+            <h2 class="sectionh2 mt-2">Project planning</h2>
+        </div>
+        <div class="col-12 mt-2">
+            <p class="sectionp">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis eget morbi fermentum sagittis, et mi lacus ornare tincidunt id.</p>
+        </div>
+        <div class="col-1 mt-2">
+            <img class="sectionimage"  src="./assets/image/Rectangle (1).png" alt="">
+        </div>
+        <div class="col-8 mt-2">
+            <h3 class="sectionh3">Learn more</h3>
+        </div>
+    </div>
+
+</div>
+<div class="col-3">
+    <div class="row">
+        <div class="col-12">
+            <img src="./assets/image/IMAGE (14).png" alt="">
+        </div>
+        <div class="col-12">
+            <h2 class="sectionh2 mt-2">Project Management</h2>
+        </div>
+        <div class="col-12 mt-2">
+            <p class="sectionp">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis eget morbi fermentum sagittis, et mi lacus ornare tincidunt id.</p>
+        </div>
+        <div class="col-1 mt-2">
+            <img class="sectionimage"  src="./assets/image/Rectangle (1).png" alt="">
+        </div>
+        <div class="col-8 mt-2">
+            <h3 class="sectionh3">Learn more</h3>
+        </div>
+    </div>
+</div>
+<div data-aos="fade-left" class="col-3">
+    <div class="row">
+        <div class="col-12">
+            <img src="./assets/image/IMAGE (15).png" alt="">
+        </div>
+        <div class="col-12">
+            <h2 class="sectionh2 mt-2">General contracting</h2>
+        </div>
+        <div class="col-12 mt-2">
+            <p class="sectionp">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis eget morbi fermentum sagittis, et mi lacus ornare tincidunt id.</p>
+        </div>
+        <div class="col-1 mt-2">
+            <img class="sectionimage"  src="./assets/image/Rectangle (1).png" alt="">
+        </div>
+        <div class="col-8 mt-2">
+            <h3 class="sectionh3">Learn more</h3>
+        </div>
+    </div>
+</div>
+</div>
+<div class="row justify-around mt-5">
+    <div data-aos="fade-right" class="col-3">
+        <div class="row">
+            <div class="col-12">
+                <img src="./assets/image/IMAGE (16).png" alt="">
+            </div>
+            <div class="col-12">
+                <h2 class="sectionh2 mt-2">Interior Design</h2>
+            </div>
+            <div class="col-12 mt-2">
+                <p class="sectionp">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis eget morbi fermentum sagittis, et mi lacus ornare tincidunt id.</p>
+            </div>
+            <div class="col-1 mt-2">
+                <img class="sectionimage"  src="./assets/image/Rectangle (1).png" alt="">
+            </div>
+            <div class="col-8 mt-2">
+                <h3 class="sectionh3">Learn more</h3>
+            </div>
+        </div>
+
+    </div>
+    <div class="col-3">
+        <div class="row">
+            <div class="col-12">
+                <img src="./assets/image/IMAGE (17).png" alt="">
+            </div>
+            <div class="col-12">
+                <h2 class="sectionh2 mt-2">Exterior Design</h2>
+            </div>
+            <div class="col-12 mt-2">
+                <p class="sectionp">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis eget morbi fermentum sagittis, et mi lacus ornare tincidunt id.</p>
+            </div>
+            <div class="col-1 mt-2">
+                <img class="sectionimage"  src="./assets/image/Rectangle (1).png" alt="">
+            </div>
+            <div class="col-8 mt-2">
+                <h3 class="sectionh3">Learn more</h3>
+            </div>
+        </div>
+    </div>
+    <div data-aos="fade-left" class="col-3">
+        <div class="row">
+            <div class="col-12">
+                <img src="./assets/image/IMAGE (18).png" alt="">
+            </div>
+            <div class="col-12">
+                <h2 class="sectionh2 mt-2">Space Planning</h2>
+            </div>
+            <div class="col-12 mt-2">
+                <p class="sectionp">Lorem ipsum dolor sit amet, consectetur adipiscing elit quis eget morbi fermentum sagittis, et mi lacus ornare tincidunt id.</p>
+            </div>
+            <div class="col-1 mt-2">
+                <img class="sectionimage"  src="./assets/image/Rectangle (1).png" alt="">
+            </div>
+            <div class="col-8 mt-2">
+                <h3 class="sectionh3">Learn more</h3>
+            </div>
+        </div>
+    </div>
+    </div>
+
+            </div>
+
+
+
+
+
+    </section>
+<section class="section-unnamed mt-20">
+    <div class="container">
+<div class="row justify-around">
+    <div class="col-9 mt-10">
+        <div class="col-7">
+            <div class="row">
+                <h1 class="section-unnamedh1" >Ready to pull the trigger? Get a quote today.</h1>
+            </div>
+        </div>
+<div class="col-6 mt-2">
+    <div class="row">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit dolor sit varius rhoncus, nullam pulvinar ut sollicitudin dictumst porttitor porttitor quis.</p>
+    </div>
+</div>
+<div  class="col-5 mt-5">
+    <div class="row justify-center">
+        <div  class="col-6">
+            <a href="#!" class="btn-primary">Get a quote</a>
+        </div>
+        <div  class="col-6">
+            <a href="#!" class="btn-light">Our services</a>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+    </div>
+</section>
+<section class="section-pages" id="pages">
+    <div class="container">
+        <div class="row mt-144 justify-around">
+            <div data-aos="fade-right" class="col-5">
+                <div class="card-img">
+                    <img src="./assets/image/IMAGE (20).png" alt="png">
+                    <div class="square"></div>
+                </div>
+            </div>
+
+            <div  data-aos="fade-left" class="col-6">
+                <div class="row">
+                    <div class="col-12">
+                        <h6 class="sectionH6">/Why choose us</h6>
+                    </div>
+                    <div class="col-10">
+                        <h2 class="section-H2">An exceptional quality that can't be beaten</h2>
+                    </div>
+                    <div class="col-12">
+                        <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit tristique
+                            imperdiet nisi metus,
+                            viverra nulla aliquet dui porta porttitor neque lectus diam justo lobortis purus in
+                            elit, elementum dignissim nullam vitae pellentesque aliquet aliquam sagittis pulvinar
+                            egestas morbi suspendisse eleifend.</p>
+                    </div>
+
+
+                </div>
+<div class="row ">
+    <div class="col-1 mt-3">
+        <img src="./assets/image/IMAGE (21).png" alt="">
+    </div>
+    <div class="col-11 mt-3">
+        <h1 class="section-pagesh1">
+            Over 15 years of experience
+        </h1>
+    </div>
+    <div class="col-1 mt-2">
+        <img src="./assets/image/IMAGE (21).png" alt="">
+    </div>
+    <div class="col-11 mt-2">
+        <h1 class="section-pagesh1">
+            200+ successfully executed projects
+        </h1>
+    </div>
+    <div class="col-1 mt-2">
+        <img src="./assets/image/IMAGE (21).png" alt="">
+    </div>
+    <div class="col-11 mt-2">
+        <h1 class="section-pagesh1">
+            Exceptional work quality
+        </h1>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="row mt-144 justify-around flex-rowreverse">
+            <div data-aos="fade-right" class="col-5">
+                <div class="card-img">
+                    <img src="./assets/image/IMAGE (23).png" alt="png">
+                    <div class="square-section"></div>
+                </div>
+            </div>
+
+            <div  data-aos="fade-left" class="col-6">
+                <div class="row">
+                    <div class="col-12">
+
+                    </div>
+                    <div class="col-10">
+                        <h2 class="section-H2">We help you build on your past and prepare for the future</h2>
+                    </div>
+                    <div class="col-12">
+                        <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit tristique
+                            imperdiet nisi metus,
+                            viverra nulla aliquet dui porta porttitor neque lectus diam justo lobortis purus in
+                            elit, elementum dignissim nullam vitae pellentesque aliquet aliquam sagittis pulvinar
+                            egestas morbi suspendisse eleifend.</p>
+                    </div>
+
+
+                </div>
+                <div class="row mt-57">
+                    <div class="col-4">
+                        <h3 class="section-count2" hello="+" hello1="Succesful projects">350</h3>
+                    </div>
+                    <div class="col-4">
+                        <h3 class="section-count2" hello1="Client satisfaction">100
+                            <span>%</span>
+                        </h3>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-projects">
+    <div class="container">
+
+        <h6 class="sectionH6 pt-10">/Past projects</h6>
+        <div class="row justify-around mt-3">
+            <div  data-aos="fade-right" class="col-6 ">
+                <h1 class="section-projectH1 ">Our project results speak for themselves</h1>
+            </div>
+            <div data-aos="fade-left" class="col-6 mt-3">
+                <div class="row justify-center">
+                    <div  class="col-4">
+                        <a href="#!" class="btn-secondary">Get a quote</a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#!" class="btn-second-light">Our services</a>
+                    </div>
+                </div>
+            </div>
+</div>
+    </div>
+</section>
+
+ <div class="mycontainer">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./assets/image/IMAGE (24).png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img src="./assets/image/Frame (4).png" alt="">
+
+            </div>
+              <div class="swiper-slide">
+                <img src="./assets/image/Frame (4).png" alt="">
+              </div>
+
+
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+    </div>
+
+    <section class="section-bottom" id="blogs">
+        <div class="container">
+
+            <h6 class="sectionH6 pt-10">/Testimonials</h6>
+            <div class="row justify-around mt-3">
+                <div  data-aos="fade-right" class="col-6 ">
+                    <h1 class="section-projectH1 ">What our clients say about us and our work</h1>
+                </div>
+                <div data-aos="fade-left" class="col-6 mt-3">
+                    <div class="row justify-center">
+                        <div  class="col-4">
+                            <a href="#!" class="btn-bottom"></a>
+                        </div>
+                        <div class="col-4">
+                            <a href="#!" class="btn-bottom-light"></a>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-5">
+            <img src="./assets/image/Frame (8).png" alt="">
+        </div>
+    </div>
+    <h6 class="sectionH6 pt-10">/blogs</h6>
+    <div class="row justify-around mt-3">
+        <div  data-aos="fade-right" class="col-6 ">
+            <h1 class="section-projectH1 ">What our clients say about us and our work</h1>
+        </div>
+        <div data-aos="fade-left" class="col-6 mt-3">
+            <div class="row justify-center">
+                <div  class="col-4">
+                    <a href="#!" class="btn-bottom2">Browse articles</a>
+                </div>
+
+            </div>
+        </div>
+</div>
+<div class="row justify-between">
+    <div data-aos="fade-right" class="col-5 mt-5">
+        <div data-aos="fade-right" class="col-12">
+            <div class="row">
+                <img src="./assets/image/IMAGE (25).png" alt="">
+            </div>
+        </div>
+        <div data-aos="fade-right" class="col-11 mt-2">
+            <h1 class="section-bottomh1">12 designers tricks for picking the perfect home color palette</h1>
+        </div>
+        <div data-aos="fade-left" class="col-4 mt-2 d-flex justify-center">
+            <p class="section-bottomp">June 17, 2022</p>
+        </div>
+    </div>
+    <div data-aos="fade-left" class="col-7 mt-5">
+        <div class="row">
+    <div data-aos="fade-left" class="col-4">
+        <img src="./assets/image/IMAGE (26).png" alt="">
+    </div>
+    <div data-aos="fade-left" class="col-5">
+        <h2 class="section-bottomh2">Paint trends 2022 - the 17 colors you need for the ultimate wonder walls</h2>
+    </div>
+    <div data-aos="fade-left" class="col-4 mt-2">
+        <img src="./assets/image/IMAGE (27).png" alt="">
+    </div>
+    <div data-aos="fade-left" class="col-5 mt-2">
+        <h2 class="section-bottomh2">Clever DIY home improvements you can do during the pandemic</h2>
+    </div>
+    <div data-aos="fade-left" class="col-4 mt-2">
+        <img src="./assets/image/IMAGE (28).png" alt="">
+    </div>
+    <div data-aos="fade-left" class="col-5 mt-2">
+        <h2 class="section-bottomh2">15 mind blowing floor designs to make your home look great</h2>
+    </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+        </div>
+    </section>
+
+    <footer class="footerfirst">
+<div class="container ">
+<div class="row justify-around ">
+    <div class="col-2 mt-20">
+<div class="row">
+    <div class="col-12">
+        <p class="footerfirstp">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="col-12 mt-3">
+        <img src="./assets/image/Frame (10).png" alt="">
+    </div>
+</div>
+    </div>
+    <div class="row">
+        <div class="col-1 mt-15">
+<h1 class="footerfirsth1">Menu</h1>
+<p class="footerfirstp">home</p>
+<p class="footerfirstp">about</p>
+<p class="footerfirstp">blog</p>
+<p class="footerfirstp">blogpost</p>
+<p class="footerfirstp">Services</p>
+<p class="footerfirstp">Services single</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-1 mt-20">
+            <p class="footerfirstp">shop</p>
+            <p class="footerfirstp">shop single</p>
+            <p class="footerfirstp">project</p>
+            <p class="footerfirstp">project single</p>
+            <p class="footerfirstp">contact</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 mt-15">
+<h1 class="footerfirsth1">Utility </h1>
+<p class="footerfirstp">Start here</p>
+<p class="footerfirstp">password protected</p>
+<p class="footerfirstp">404 not found</p>
+<p class="footerfirstp">licences</p>
+<p class="footerfirstp">changelog</p>
+<p class="footerfirstp">More webflow templates</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4 mt-15">
+            <h1 class="footerfirsth1">CONTACT </h1>
+            <img src="./assets/image/Frame (11).png" alt="">
+        </div>
+    </div>
+</div>
+</div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: "auto",
+          spaceBetween: 30,
+          loop:true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
+</body>
+
+</html>
